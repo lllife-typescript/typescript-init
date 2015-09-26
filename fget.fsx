@@ -56,5 +56,5 @@ module Fget =
 
 Fget.loadNuget()
 Fget.install (fsi.CommandLineArgs.[1])
-Fget.moveContent("Scripts", "dist/Scripts")
+Fget.moveContent("Scripts", "dist/Scripts/library")
 Fget.moveContent("Content", "dist/Content")
