@@ -1,5 +1,5 @@
 
-### Using
+### Usage
 
 ```
 fsharpi fget.exe <package>
@@ -9,7 +9,7 @@ fsharpi fget.exe <package>
 ./install.sh <package>
 ```
 
-### Install jQuery
+### Install Library
 
 ```
 fsharpi fget.fsx jQuery
