@@ -6,7 +6,5 @@
     "filesGlob": [
         "src/**/*.ts"
     ],
-    "files": [
-        "src/hello.ts"
-    ]
+    "files": []
 }
