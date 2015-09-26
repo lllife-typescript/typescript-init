@@ -18,7 +18,10 @@ module Fget =
         log(message)
 
     let moveContent(dirName: string, targetDir: string) =
-        if not (Directory.Exists(targetDir)) then Directory.CreateDirectory(targetDir) |> ignore
+        if Directory.Exists(targetDir) then
+            Directory.Delete(targetDir, true)
+            Directory.CreateDirectory(targetDir) |> ignore
+            
         let dir = DirectoryInfo(packagesDir)
         let packages = dir.GetDirectories()
         let allDir = packages |> Seq.map ( fun x -> x.GetDirectories())
