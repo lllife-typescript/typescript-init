@@ -1,10 +1,11 @@
 {
     "compilerOptions": {
         "removeComments": true,
-        "outDir": "dist/scripts/"
+        "outDir": "dist/Scripts/app"
     },
     "filesGlob": [
         "src/**/*.ts"
+        "typeing/**/*.d.ts"
     ],
     "files": []
 }

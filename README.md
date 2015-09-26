@@ -5,8 +5,22 @@
 fsharpi fget.exe <package>
 ```
 
-## Install jQuery
+```
+./install.sh <package>
+```
+
+### Install jQuery
 
 ```
-fsharpi fget.exe jQuery
+fsharpi fget.fsx jQuery
+```
+
+```
+./install jQuery
+```
+
+### Install TypeScript
+
+```
+tsd install jQuery
 ```
