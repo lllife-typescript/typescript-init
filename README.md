@@ -2,7 +2,7 @@
 ### Usage
 
 ```
-fsharpi fget.exe <package>
+fsharpi fget.fsx <package>
 ```
 
 ```
