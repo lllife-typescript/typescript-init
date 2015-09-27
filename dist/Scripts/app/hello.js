@@ -38,5 +38,12 @@ var app;
             console.log(x);
         });
     }
-    array();
+    function dom() {
+        var result = document.getElementById("dom");
+        var source = Rx.Observable.fromEvent(document, "mousemove");
+        var sub = source.subscribe(function (x) {
+            result.innerHTML = x.clientX + ", " + x.clientY;
+        });
+    }
+    dom();
 })(app || (app = {}));

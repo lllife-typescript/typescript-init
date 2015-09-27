@@ -45,5 +45,13 @@ module app {
         });
     }
 
-    array();
+    function dom() {
+            var result = document.getElementById("dom");
+            var source = Rx.Observable.fromEvent(document, "mousemove");
+            var sub = source.subscribe((x: MouseEvent) => {
+                result.innerHTML = x.clientX + ", " + x.clientY;
+            });
+    }
+
+    dom();
 }
